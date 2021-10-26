@@ -54,13 +54,14 @@ function factorial(numeral = 5)
 
 function fibonacci(n = 8)
 {
-    let array = [];
-    let result= 0;
-    for(counter = 0;counter <= n; counter ++)
+    let fibonacci = 1;
+    let result = 0;
+    for(counter4 = 1;counter4 < n; counter4 ++)
     {
-        result = array.indexOf[counter] + (array.indexOf[counter-1]-1);
-        array.push(result)     
+        result = add(result,fibonacci)
+        fibonacci = add(result,-fibonacci)
+        console.log(result)
     }
-    return array.indexOf(n)
+    return result
 }
  console.assert(fibonacci(8) === 13, 'A função fibonacci não está funcionando como esperado');
